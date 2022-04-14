@@ -4,10 +4,15 @@ import { LayerMaterial, Depth, Noise } from "lamina";
 import { Canvas, useThree, useFrame } from "@react-three/fiber";
 import { Text } from "@react-three/drei";
 import NF02 from "../components/NF02";
+import Head from "next/head";
 
 export default function Home() {
   return (
     <>
+      <Head>
+        <title>trafasdwimedika</title>
+        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+      </Head>
       <Overlay />
       <div style={{ height: "100vh", width: "100%" }}>
         <Canvas dpr={[1, 2]} camera={{ position: [0, 0, 10], fov: 22 }}>
