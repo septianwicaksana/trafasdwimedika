@@ -73,7 +73,7 @@ function Caption({ children }) {
       position={[0, 0, -5]}
       lineHeight={0.8}
       font="/ki-w05-medium.otf"
-      fontSize={width / 8}
+      fontSize={width / 20}
       material-toneMapped={false}
       anchorX="center"
       anchorY="middle"
