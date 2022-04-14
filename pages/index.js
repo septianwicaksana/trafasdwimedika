@@ -14,7 +14,7 @@ export default function Home() {
           <Bg />
           <Suspense fallback={null}>
             <NF02 />
-            <Caption>{`HOLD ON.\nWE WORKING\nSOMETHING GOOD.`}</Caption>
+            <Caption>{`HOLD ON.\nWE WORKING ON\nSOMETHING REVOLUTIONARY.`}</Caption>
             <Rig />
           </Suspense>
         </Canvas>
@@ -43,7 +43,7 @@ function Overlay() {
     >
       <a
         href="https://pmnd.rs/"
-        style={{ position: "absolute", bottom: 40, left: 90, fontSize: "13px" }}
+        style={{ position: "absolute", bottom: 40, left: 40, fontSize: "13px" }}
       >
         trafas dwi medika
       </a>
