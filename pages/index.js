@@ -3,7 +3,7 @@ import { Suspense } from "react";
 import { LayerMaterial, Depth, Noise } from "lamina";
 import { Canvas, useThree, useFrame } from "@react-three/fiber";
 import { Text } from "@react-three/drei";
-import NF02 from "./components/NF02";
+import NF02 from "./NF02";
 
 export default function Home() {
   return (
