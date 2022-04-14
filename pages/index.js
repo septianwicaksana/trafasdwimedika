@@ -19,7 +19,7 @@ export default function Home() {
           <Bg />
           <Suspense fallback={null}>
             <NF02 />
-            <Caption>{`HOLD ON.\nWE WORKING ON\nSOMETHING REVOLUTIONARY.`}</Caption>
+            <Caption>{`HOLD ON.\nWE ARE WORKING ON\nSOMETHING REVOLUTIONARY.`}</Caption>
             <Rig />
           </Suspense>
         </Canvas>
