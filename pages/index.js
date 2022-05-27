@@ -3,6 +3,7 @@ import { Suspense } from "react";
 import { LayerMaterial, Depth, Noise } from "lamina";
 import { Canvas, useThree, useFrame } from "@react-three/fiber";
 import { Text } from "@react-three/drei";
+import Image from "next/image";
 import NF02 from "../components/NF02";
 import Head from "next/head";
 
@@ -24,11 +25,15 @@ export default function Home() {
           </Suspense>
         </Canvas>
       </div>
-      <img
-        src="/LOGO_TDM-01.png"
-        alt="An SVG of an Logo"
-        style={{ position: "absolute", top: 45, right: 40, width: 30 }}
-      />
+      <div style={{ position: "absolute", top: 45, right: 40, width: 30 }}>
+        <Image
+          src="/LOGO_TDM-01.png"
+          alt="An SVG of an Logo"
+          width={30}
+          height={30}
+          layout="responsive"
+        />
+      </div>
     </>
   );
 }
@@ -47,7 +52,6 @@ function Overlay() {
       }}
     >
       <a
-        href="https://pmnd.rs/"
         style={{ position: "absolute", bottom: 40, left: 40, fontSize: "13px" }}
       >
         trafas dwi medika
@@ -55,8 +59,62 @@ function Overlay() {
       <div
         style={{ position: "absolute", top: 40, left: 40, fontSize: "13px" }}
       >
-        -medtech
+        <div style={{ flex: "1 1 0%", display: "flex", gap: "2em" }}>
+          <a
+            style={{
+              flex: "1 1 0%",
+              height: 12,
+              fontSize: 12,
+              lineHeight: "12px",
+              textAlign: "center",
+              color: "white",
+              whiteSpace: "nowrap",
+            }}
+          >
+            About us
+          </a>
+          <a
+            style={{
+              flex: "1 1 0%",
+              height: 12,
+              fontSize: 12,
+              lineHeight: "12px",
+              textAlign: "center",
+              color: "white",
+              whiteSpace: "nowrap",
+            }}
+          >
+            Products
+          </a>
+          <a
+            style={{
+              flex: "1 1 0%",
+              height: 12,
+              fontSize: 12,
+              lineHeight: "12px",
+              textAlign: "center",
+              color: "white",
+              whiteSpace: "nowrap",
+            }}
+          >
+            Careers
+          </a>
+          <a
+            style={{
+              flex: "1 1 0%",
+              height: 12,
+              fontSize: 12,
+              lineHeight: "12px",
+              textAlign: "center",
+              color: "white",
+              whiteSpace: "nowrap",
+            }}
+          >
+            Contact
+          </a>
+        </div>
       </div>
+
       <div
         style={{
           position: "absolute",
